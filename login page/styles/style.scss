@@ -1,0 +1,83 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+$bgcolor: #7a4397;
+$maincontainerColor: whitesmoke;
+$boxshadowcolor: #521f6a;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $bgcolor;
+    font-family:Arial, Helvetica, sans-serif;
+    @include flexCenter();
+    height: 100vh;
+    .main-container {
+        background-color: $maincontainerColor;
+        width: 30%;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 20px 20px $boxshadowcolor;
+        z-index: 10;
+
+        h1 {
+            text-align: center;
+            color: $bgcolor;
+            font-weight: 800;
+        }
+
+        label {
+            font-weight: 600;
+        }
+
+        input[type=text],
+        input[type=email],
+        input[type=password] {
+            // display: inline-block;
+            width: 100%;
+            padding: 10px;
+            margin: 7px 0 25px 0;
+            border: 2px solid #000;
+            border-radius: 5px;
+            box-shadow: 4px 4px rgb(0, 0, 0);
+        }
+        input[type=submit] {
+            background-color: $bgcolor;
+            box-shadow: 4px 4px rgb(0, 0, 0);
+            border: 1px solid #000;
+            color: #000;
+            padding: 13px;
+            border-radius: 30px;
+            width: 100%;
+            margin: 10px 0 20px 0;
+            font-weight: 900;
+
+            &:hover, &:focus {
+                background-color: darken($bgcolor, 5%);
+                cursor: pointer;
+            }
+        }
+        p{
+            text-align: center;
+            font-weight: 300;
+            
+            span {
+                color: #8963ab;
+                text-decoration: underline;
+                font-weight: 900;
+
+                cursor: pointer;
+                &:hover, &:focus {
+                    color: darken(#8963ab, 10%);
+                }
+            }
+        }
+    } 
+}
+

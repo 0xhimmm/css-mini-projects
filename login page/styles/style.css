@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #7a4397;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body .main-container {
+  background-color: whitesmoke;
+  width: 30%;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 20px 20px #521f6a;
+  z-index: 10;
+}
+body .main-container h1 {
+  text-align: center;
+  color: #7a4397;
+  font-weight: 800;
+}
+body .main-container label {
+  font-weight: 600;
+}
+body .main-container input[type=text],
+body .main-container input[type=email],
+body .main-container input[type=password] {
+  width: 100%;
+  padding: 10px;
+  margin: 7px 0 25px 0;
+  border: 2px solid #000;
+  border-radius: 5px;
+  box-shadow: 4px 4px rgb(0, 0, 0);
+}
+body .main-container input[type=submit] {
+  background-color: #7a4397;
+  box-shadow: 4px 4px rgb(0, 0, 0);
+  border: 1px solid #000;
+  color: #000;
+  padding: 13px;
+  border-radius: 30px;
+  width: 100%;
+  margin: 10px 0 20px 0;
+  font-weight: 900;
+}
+body .main-container input[type=submit]:hover, body .main-container input[type=submit]:focus {
+  background-color: #6c3b85;
+  cursor: pointer;
+}
+body .main-container p {
+  text-align: center;
+  font-weight: 300;
+}
+body .main-container p span {
+  color: #8963ab;
+  text-decoration: underline;
+  font-weight: 900;
+  cursor: pointer;
+}
+body .main-container p span:hover, body .main-container p span:focus {
+  color: #6f4d8e;
+}/*# sourceMappingURL=style.css.map */
