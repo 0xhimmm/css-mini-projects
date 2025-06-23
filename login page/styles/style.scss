@@ -1,11 +1,12 @@
+$bgcolor: #7a4397;
+$maincontainerColor: whitesmoke;
+$boxshadowcolor: #521f6a;
+
 @mixin flexCenter {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-$bgcolor: #7a4397;
-$maincontainerColor: whitesmoke;
-$boxshadowcolor: #521f6a;
 
 * {
     padding: 0;
