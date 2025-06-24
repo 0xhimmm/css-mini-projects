@@ -7,10 +7,11 @@
 }
 
 .main-container {
-    // background: #151515;
+    background: #151515;
     width: 100%;
     height: 100%;
     text-align: center;
+    position: absolute;
 
     &::before, &::after {
         content: "";
@@ -18,7 +19,7 @@
         height: 1px;
         position: absolute;
         left: 50%;
-        transform: translateX(-50%);;
+        transform: translateX(-50%);
         width: 800px;
     }
 
@@ -103,6 +104,29 @@
         text-shadow: 0 -1px 0 #000;
         width: 80px;
         cursor: pointer;
+
+        &:hover, &:focus {
+            background: linear-gradient(#323232, #292929);
+            color: #5f5;
+            outline: none;
+        }
+
+        &:active {
+            background: linear-gradient(#323232, #292929);
+            box-shadow: 0 1px 0 #000, inset 1px 0 1px #222;
+            top: 1px;      
+        }
     }
+}
+
+@keyframes glow {
+  0% {
+    border-color: #66ff66;
+    box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 5px rgba(0,255,0,.1), 0 2px 0 #000;
+  }
+  100% {
+    border-color: #6f6;
+    box-shadow: 0 0 20px rgba(0,255,0,.6), inset 0 0 10px rgba(0,255,0,.4), 0 2px 0 #000;
+  }
 }
 
