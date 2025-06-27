@@ -118,3 +118,58 @@ body {
     background: #e92828;
     color: #fff;
 }
+
+@media (prefers-color-scheme: dark) {
+    body{
+        background: linear-gradient(315deg, #2e0d0d, #1c1f24);
+    }
+
+    /* Facebook */
+    .facebook:hover,
+    .facebook:hover .tooltip,
+    .facebook:hover .tooltip::before {
+        background: #3b5999;
+        color: #fff;
+    }
+
+    /* Twitter */
+    .twitter:hover,
+    .twitter:hover .tooltip,
+    .twitter:hover .tooltip::before {
+        background: #000;
+        color: #fff;
+    }
+
+    /* Instagram */
+    .instagram:hover {
+        background: radial-gradient(circle at 30% 107%, 
+            #fdf497 0%, 
+            #fdf497 5%, 
+            #fd5949 45%, 
+            #d6249f 60%, 
+            #285AEB 90%);
+        color: #fff;
+    }
+
+    .instagram:hover .tooltip,
+    .instagram:hover .tooltip::before {
+        background: #d6249f;
+        color: #fff;
+    }
+
+    /* GitHub */
+    .github:hover,
+    .github:hover .tooltip,
+    .github:hover .tooltip::before {
+        background: #24292e;
+        color: #fff;
+    }
+
+    /* YouTube */
+    .youtube:hover,
+    .youtube:hover .tooltip,
+    .youtube:hover .tooltip::before {
+        background: #e92828;
+        color: #fff;
+    }
+}
